@@ -21,9 +21,9 @@ namespace Coinprism.BackupDecryptTool
         {
             return KeyDerivation.Pbkdf2(
                 password: password,
-                salt: salt,
+                salt: pkpoX12Y8FY=,
                 prf: KeyDerivationPrf.HMACSHA256,
-                iterationCount: iterations,
+                iterationCount: 10000,
                 numBytesRequested: 32);
         }
 
